@@ -14,6 +14,9 @@
             --highlight-color: #f7f7f7;
             --highlight-hover-color: #f0f0f0;
             --box-shadow: 0rem .125rem .375rem rgba(0, 0, 0, .1), 0rem .5rem 1rem rgba(0, 0, 0, .08);
+            --icon-up: url(../icons/up.svg);
+            --icon-grid_view: url(../icons/grid_view.svg);
+            --icon-list_view: url(../icons/list_view.svg)
         }
 
         .folder-link {
@@ -120,7 +123,7 @@
 
     <nav class="navbar navbar-expand-lg  sticky-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">Mister Coderz</a>
+            <a class="navbar-brand text-white" href="index.html">Mister Coderz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -179,99 +182,20 @@
     <!-- ALERT ENDS HERE -->
 
     <div class="container">
-        <p class="text-center mt-5 fs-1 fw-bold ">Notes</p>
-
-        <div class="region mt-5" onclick="goToFolder('/sem01_notes.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">SEM I</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/sem02_notes.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">SEM II</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/chemsitrygroup_notes.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">CHEMISTRY GROUP</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/physicsgroup_notes.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">PHYSICS GROUP</span>
-        </div>
-        <p class="text-center mt-5 fs-1 fw-bold ">PYQs</p>
-
-        <div class="region mt-5" onclick="goToFolder('/sem01_pyqs.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">SEM I</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/sem02_pyqs.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">SEM II</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/chemistrygroup_pyqs.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">CHEMISTRY GROUP</span>
-        </div>
-
-        <div class="region mt-2" onclick="goToFolder('/physicsgroup_pyqs.html')">
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
-                    <path
-                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
-                    </path>
-                </svg>
-            </div>
-            <span class="folder-link">PHYSICS GROUP</span>
-        </div>
-        
-        
-
+        <h1 class="text-align mt-5 mx-5">About</h1>
+        <p class="mx-5">This archieve website was created to help freshers.</p>
+        <h3 class="mt-4 mx-5">Sources</h3>
+        <ul class="mx-5">
+            <li>Made with HTML, CSS, JAVASCRIPT</li>
+            <li>Frameworks used - Tailwind CSS, Bootstrap 5</li>
+            <li>Hosted on Github Pages</li>
+        </ul>
+        <p class="mx-5">Get Full Source Code from here.</p>
+        <h3 class="mt-4 mx-5">Contributers</h3>
+        <ul class="mx-5">
+            <li>Kartik Singh (BTech CSE 2027)</li>
+        </ul>
+        <p class="mx-5">Consider Contributing to this projectby submitting your materials.</p>
     </div>
 
     <!-- FOOTER STARTS HERE -->
@@ -282,8 +206,7 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">ABOUT US</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">CONTRIBUTE</a></li>
         </ul>
-        <p class="text-center text-body-secondary">Made with ❤ by - Mister Coderz Team(Kartik Singh, Vinayak Sharma,
-            Kanika Goyal, Arushi Gupta)</p>
+        <p class="text-center text-body-secondary">Made with ❤ by - Mister Coderz Team(Kartik Singh)</p>
         <p class="text-center text-body-secondary"><strong>NOTE - This is not an official site of college,</strong> This
             is a community driven project and we
             encourage you to contribute to the project by adding more question papers, notes.</p>
