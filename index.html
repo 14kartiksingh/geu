@@ -8,27 +8,30 @@
     <link rel="shortcut icon" href="MISTER CODERZ (1).png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <style>:root {
+    <style>
+        :root {
             --text-color: #242424;
             --highlight-color: #f7f7f7;
             --highlight-hover-color: #f0f0f0;
-            --box-shadow: 0rem .125rem .375rem rgba(0,0,0,.1),0rem .5rem 1rem rgba(0,0,0,.08);
+            --box-shadow: 0rem .125rem .375rem rgba(0, 0, 0, .1), 0rem .5rem 1rem rgba(0, 0, 0, .08);
             --icon-up: url(../icons/up.svg);
             --icon-grid_view: url(../icons/grid_view.svg);
             --icon-list_view: url(../icons/list_view.svg)
         }
+
         .folder-link {
             width: inherit;
             word-wrap: break-word;
             max-width: 80%;
             padding: 1em;
             font-size: large;
-            color: var(--text-color)!important
+            color: var(--text-color) !important
         }
-        
+
         li {
             margin: 10px
         }
+
         .region {
             width: inherit;
             height: inherit;
@@ -40,75 +43,78 @@
             transition: transform .2s;
             display: flex
         }
+
         .region:hover {
-    background-color: var(--highlight-hover-color);
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-    transform: scale(1.025)
-}
+            background-color: var(--highlight-hover-color);
+            cursor: pointer;
+            box-shadow: var(--box-shadow);
+            transform: scale(1.025)
+        }
 
-.icon {
-    justify-content: center;
-    align-items: center;
-    display: flex
-}
-.gridView #fileList {
-    justify-content: center;
-    display: flex
-}
+        .icon {
+            justify-content: center;
+            align-items: center;
+            display: flex
+        }
 
-.gridView #fileList>div {
-    flex-wrap: wrap;
-    max-width: 660px;
-    display: flex
-}
+        .gridView #fileList {
+            justify-content: center;
+            display: flex
+        }
 
-.gridView #fileList li {
-    width: 200px;
-    height: 200px
-}
+        .gridView #fileList>div {
+            flex-wrap: wrap;
+            max-width: 660px;
+            display: flex
+        }
 
-.gridView #fileList .region {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0
-}
+        .gridView #fileList li {
+            width: 200px;
+            height: 200px
+        }
 
-.gridView #fileList .folder-link {
-    text-align: center;
-    width: 180px;
-    padding: 0;
-    font-size: medium
-}
+        .gridView #fileList .region {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0
+        }
 
-.gridView #fileList .icon svg {
-    width: 75px;
-    height: 75px
-}
+        .gridView #fileList .folder-link {
+            text-align: center;
+            width: 180px;
+            padding: 0;
+            font-size: medium
+        }
 
-@media only screen and (max-width: 600px) {
-    .gridView #fileList>div {
-        justify-content:center
-    }
+        .gridView #fileList .icon svg {
+            width: 75px;
+            height: 75px
+        }
 
-    .gridView #fileList li {
-        width: 150px;
-        height: 150px
-    }
+        @media only screen and (max-width: 600px) {
+            .gridView #fileList>div {
+                justify-content: center
+            }
 
-    .gridView #fileList .folder-link {
-        text-align: center;
-        width: 120px;
-        padding: 0;
-        font-size: medium
-    }
+            .gridView #fileList li {
+                width: 150px;
+                height: 150px
+            }
 
-    .gridView #fileList .icon svg {
-        width: 50px;
-        height: 50px
-    }
-}</style>
+            .gridView #fileList .folder-link {
+                text-align: center;
+                width: 120px;
+                padding: 0;
+                font-size: medium
+            }
+
+            .gridView #fileList .icon svg {
+                width: 50px;
+                height: 50px
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -137,14 +143,14 @@
                     </li>
                     <li class="nav-item dropdown">
                         <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Semester
+                            Group
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Sem - I</a></li>
+                            <li><a class="dropdown-item" href="#">CHEMISTRY GROUP</a></li>
                             <!-- <li>
                                 <hr class="dropdown-divider">
                             </li> -->
-                            <li><a class="dropdown-item" href="#">Sem - II</a></li>
+                            <li><a class="dropdown-item" href="#">PHYSICS GROUP</a></li>
 
                         </ul>
                     </li>
@@ -176,19 +182,102 @@
     <!-- ALERT ENDS HERE -->
 
     <div class="container">
+        <p class="text-center mt-5 fs-1 fw-bold ">Notes</p>
+
+        <div class="region mt-5" onclick="goToFolder('/chemistry_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">CHEMISTRY GROUP</span>
+        </div>
+
+        <div class="region mt-5" onclick="goToFolder('/physics_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">PHYSICS GROUP</span>
+        </div>
+        <p class="text-center mt-5 fs-1 fw-bold ">PYQs</p>
+
+        <div class="region mt-5" onclick="goToFolder('/chemistry_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">CHEMISTRY GROUP</span>
+        </div>
+        <div class="region mt-5" onclick="goToFolder('/physics_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">PHYSICS GROUP</span>
+        </div>
+        <p class="text-center mt-5 fs-1 fw-bold ">Viva Questions</p>
+
+        <div class="region mt-5" onclick="goToFolder('/chemistry_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">CHEMISTRY GROUP</span>
+        </div>
+        <div class="region mt-5" onclick="goToFolder('/physics_group.html')">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16">
+                    <path
+                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z">
+                    </path>
+                </svg>
+            </div>
+            <span class="folder-link">PHYSICS GROUP</span>
+        </div>
 
 
-        <div class="region mt-5" onclick="goToFolder(this, '/pyqs/bba', 'bba')" onauxclick="handleAuxClickToFolder(event, this, '/pyqs/bba', 'bba')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16"> <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"></path> </svg></div><span class="folder-link">CHEMISTRY GROUP</span></div>
-        <div class="region mt-5" onclick="goToFolder(this, '/pyqs/bba', 'bba')" onauxclick="handleAuxClickToFolder(event, this, '/pyqs/bba', 'bba')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16"> <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"></path> </svg></div><span class="folder-link">PHYSICS GROUP</span></div>
-        <div class="region mt-5" onclick="goToFolder(this, '/pyqs/bba', 'bba')" onauxclick="handleAuxClickToFolder(event, this, '/pyqs/bba', 'bba')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16"> <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"></path> </svg></div><span class="folder-link">SEMESTER - I</span></div>
-        <div class="region mt-5" onclick="goToFolder(this, '/pyqs/bba', 'bba')" onauxclick="handleAuxClickToFolder(event, this, '/pyqs/bba', 'bba')"><div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F5B800" viewBox="0 0 16 16"> <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3m-8.322.12q.322-.119.684-.12h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981z"></path> </svg></div><span class="folder-link">SEMESTER - II</span></div>
-        
+    </div>
 
-</div>
+    <!-- FOOTER STARTS HERE -->
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">HOME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">ABOUT US</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">CONTRIBUTE</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">Made with ❤ by - Mister Coderz Team(Kartik Singh, Vinayak Sharma,
+            Kanika Goyal, Arushi Gupta)</p>
+        <p class="text-center text-body-secondary"><strong>NOTE - This is not an official site of college,</strong> This
+            is a community driven project and we
+            encourage you to contribute to the project by adding more question papers, notes.</p>
+    </footer>
+
+    <!-- FOOTER ENDS HERE -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+    <script>function goToFolder(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 
 </html>
